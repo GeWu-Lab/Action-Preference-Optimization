@@ -1,0 +1,6 @@
+defaults:
+  - base_model
+
+name_or_path: "~/.cache/huggingface/hub/models--openvla--openvla-7b/snapshots/31f090d05236101ebfc381b61c674dd4746d4ce0"
+block_name: LlamaDecoderLayer
+attn_implementation: flash_attention_2

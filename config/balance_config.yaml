@@ -1,0 +1,40 @@
+defaults:
+- _self_
+- model: openvla
+- loss: hapo
+- trainer: hapo_trainer
+- dataset: balance_hapo_dataset
+- eval_dataset: balance_hapo_dataset
+
+task_name: coffee_d0
+local_run_dir: ckpts
+exp_name: hapo_exp
+cache_dir: .cache
+seed: 1
+warmup_steps: 10
+cache_reference_logprobs: false
+lr: 5e-5
+correct_ratio: 0.5
+interaction_ratio: 0.25
+# wandb configuration
+wandb:
+  enabled: true
+  entity: null
+  project: "hapo"
+minimum_log_interval_secs: 1.0
+
+use_lora: true
+
+batch_size: 8
+eval_batch_size: 32
+n_epochs: 40
+
+grad_accumulation_steps: 1
+save_steps: 500
+action_space: 7
+
+# evaluation
+do_first_eval: false
+eval_every: 2000
+debug: false
+intermediate_checkpoints: true

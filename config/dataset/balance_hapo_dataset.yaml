@@ -1,0 +1,11 @@
+
+_target_: dataset.balance_hapo_dataset.BalanceHAPODataset
+kwargs:
+  data_root_dir: "robotic_data/mimicgen"
+  interaction_root_dir: "robotic_data/interaction_data/coffee_d0"
+  data_name: "mimicgen"
+  data_list_names: "coffee_d0.json"
+  interaction_list_names: "interaction_data_list.json"
+  demo_number: 50
+  image_shape: 224
+  previous_K: 5

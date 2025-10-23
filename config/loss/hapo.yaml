@@ -1,0 +1,20 @@
+# HAPO
+
+beta: 0.1
+
+trainer: HAPOTrainer
+
+dataloader: UnpairedPreferenceDataLoader
+
+# how much to weigh the losses of desirable examples (when dataset is imbalanced)
+desirable_weight: 1.0
+
+# how much to weigh the losses of undesirable examples (when dataset is imbalanced)
+undesirable_weight: 1.0
+
+bc_weight: 1
+
+kl_max: 5
+kl_min: -5
+
+token_distance: 1
