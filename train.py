@@ -31,8 +31,8 @@ from peft import LoraConfig, TaskType, get_peft_model, PeftModel
 import wandb
 import tqdm
 import numpy as np
-from dataset.balance_hapo_dataset import BalanceHAPODataset
-from trainer.ddp_robotic_trainer import HAPOTrainer
+from dataset.balance_apo_dataset import BalanceAPODataset
+from trainer.ddp_robotic_trainer import APOTrainer
 import time
 DATE_TIME = time.strftime("%Y_%m_%d-%H_%M_%S")
 def main(config: DictConfig):

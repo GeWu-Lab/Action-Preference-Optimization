@@ -1,11 +1,11 @@
 
-# [NeurIPS 2025] APO: Human-assisted Robotic Policy Refinement via Action Preference Optimization
+# [NeurIPS 2025] Human-assisted Robotic Policy Refinement via Action Preference Optimization
 
-[Project Page](https://gewu-lab.github.io/hapo_human_assisted_preference_optimization/) 
+[Project Page](https://gewu-lab.github.io/action_preference_optimization/) 
 
-[Arxiv](https://arxiv.org/abs/2506.07127)
+[arXiv](https://arxiv.org/abs/2506.07127)
 
-![HAPO](./pipeline.png)
+![APO](./pipeline.png)
 
 
 ## Introduction
@@ -63,16 +63,16 @@ pip install "flash-attn==2.5.5" --no-build-isolation
 ```
 ## Training
 
-To train the HAPO model, run the following command:
+To train the APO model, run the following command:
 ```bash
-bash scripts/hapo_train.sh ${task_name}
+bash scripts/apo_train.sh ${task_name}
 ```
 
-In this work, we evaluate the performance of the HAPO model on the MimicGen dataset.
+In this work, we evaluate the performance of the APO model on the MimicGen dataset.
 
 ## Inference
 
-To evaluate the performance of the HAPO model, run the following command:
+To evaluate the performance of the APO model, run the following command:
 ```bash
 bash scripts/inference.sh ${task_name} ${adapter_path}
 ```

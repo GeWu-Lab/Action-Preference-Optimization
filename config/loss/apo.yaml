@@ -2,7 +2,7 @@
 
 beta: 0.1
 
-trainer: HAPOTrainer
+trainer: APOTrainer
 
 dataloader: UnpairedPreferenceDataLoader
 

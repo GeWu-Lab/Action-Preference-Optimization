@@ -1,14 +1,14 @@
 defaults:
 - _self_
 - model: openvla
-- loss: hapo
-- trainer: hapo_trainer
-- dataset: balance_hapo_dataset
-- eval_dataset: balance_hapo_dataset
+- loss: apo
+- trainer: apo_trainer
+- dataset: balance_apo_dataset
+- eval_dataset: balance_apo_dataset
 
 task_name: coffee_d0
 local_run_dir: ckpts
-exp_name: hapo_exp
+exp_name: apo_exp
 cache_dir: .cache
 seed: 1
 warmup_steps: 10
@@ -20,7 +20,7 @@ interaction_ratio: 0.25
 wandb:
   enabled: true
   entity: null
-  project: "hapo"
+  project: "apo"
 minimum_log_interval_secs: 1.0
 
 use_lora: true

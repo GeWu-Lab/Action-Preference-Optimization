@@ -23,7 +23,7 @@ from tokenizer.prompt import PromptBuilder
 from transformers import PreTrainedTokenizerBase
 from typing import Any, Dict, Tuple, Type
 
-class BalanceHAPODataset(Dataset):
+class BalanceAPODataset(Dataset):
     def __init__(self,
         action_tokenizer: ActionTokenizer,
         base_tokenizer: PreTrainedTokenizerBase,

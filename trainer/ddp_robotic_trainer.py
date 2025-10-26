@@ -168,7 +168,7 @@ from transformers.modeling_outputs import CausalLMOutputWithPast
 
 
 
-class HAPOTrainer(DDPRoboticBasicTrainer):
+class APOTrainer(DDPRoboticBasicTrainer):
 
     def loss(self,
         batch: Dict,

@@ -1,5 +1,5 @@
 
-_target_: dataset.balance_hapo_dataset.BalanceHAPODataset
+_target_: dataset.balance_apo_dataset.BalanceAPODataset
 kwargs:
   data_root_dir: "robotic_data/mimicgen"
   interaction_root_dir: "robotic_data/interaction_data/coffee_d0"
